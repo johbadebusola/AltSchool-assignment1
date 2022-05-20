@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale:1.0;">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body{
+background-image:url(banner1.png);
+background-color:hsl(0, 100%, 74%);
+margin:0;
+}
+
+#banner{
+position:fixed;
+background-color:hsl(248, 32%, 49%);
+width:100%;
+display:flex;
+justify-content:space-around;
+top:0;
+}
+
+#section1{
+margin-top:6em;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+#banner > p{
+font-family: 'Open Sans', sans-serif;
+color:hsl(322, 100%, 66%);
+}
+
+nav{
+margin-top:1em;
+}
+
+ul{
+list-style-type:none;
+padding:0px;
+text-align:center;
+font-size:0.8em;
+width:100%;
+font-family: 'Open Sans', sans-serif;
+}
+
+li{ margin:0em;
+float:left;
+
+}
+
+li a{
+padding:5px;
+text-decoration:none;
+color:white ;
+font-weight:bold;
+}
+
+li a:hover{
+color:black;
+border-bottom:1px solid white;
+}
+
+img{
+width:80px;
+border-radius:50%;
+}
+
+
+
+#box1, #box2{
+background:white;
+text-align: center;
+padding:2em;
+margin:1.5em;
+border-top-right-radius:15px;
+border-top-left-radius:15px;
+margin-bottom:1.5em;
+font-size:1.2em;
+font-family: 'Macondo', cursive;
+color:hsl(248, 32%, 49%);
+}
+ 
+#calc {
+text-align:center;
+}
+#calc a{
+color:white;
+text-decoration:none;
+
+}
+    @media (min-width:1068px) {
+        #section1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            
+        }
+         #box1, #box2{
+            display: flex;
+             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+       
+        #box1{
+            font-size:2em;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="banner">
+<img src="face.jpg" alt="face">
+<nav>
+<ul>
+<li >  <a href="index.html">HOME</a> </li>
+<li >   <a href="contact.html">CONTACT </a> </li>
+<li >  <a href="register.html">REGISTER </a> </li>
+<li >  <a href="login.html">LOGIN  </a></li>
+</ul>
+</nav>
+</div>
+
+<div id="section1">
+
+<div id="box1">
+<p>" I'M 
+<br>
+    <span>ADEBUSOLA </span>JOHN "</p>
+
+</div>
+
+<div id="box2">
+<p>I'm Adebusola John Oluwatoyin. English is my primary mode of communication, i also speak yoruba. I am an easygoing person. Making Pencil potrait is what i love doing during my free time. </p>
+</div>
+
+
+
+<div id="box2">
+<p>My goal at the end of this diploma is to become proficient   in Java script and other JS libraries (such as react) as a frontend development.</p>
+</div>
+
+<div id="box2">
+<p> EXPERIENCE </p>
+<p> 1. University of Nigeria Nsukka (Bsc.ed)
+<br>
+<br>
+2. De-excel universal college (WAEC)
+<br>
+<br>
+3. Banbi private school(FLSC)
+
+</p>
+</div>
+
+<div id="box2">
+<p> JOB EXPERIENCE</p>
+<p>
+1. DatePalm High School
+<br>
+<br>
+2. Topx Group of Company
+</p>
+</div>
+
+<div id="box2">
+<p> HOBBIES</p>
+<p>
+1. Making Art
+<br>
+<br>
+2. Playing Video games
+<br>
+<br>
+
+</p>
+</div>
+
+</div>
+    <p id="calc"> <a href="calculator.html"> CLICK HERE</a> TO VIEW THE CALCULATOR</p>
+</body>
+</html>

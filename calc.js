@@ -13,17 +13,3 @@ document.querySelector("#output-txt").setAttribute("style","  margin-right:0.5em
 document.querySelector("#buttons").setAttribute(
 "style", "  border-radius:10px; background-color:hsl(223, 31%, 20%);margin-top:2em; display:grid; grid-template-columns: repeat(3, 1fr);  grid-template-rows: repeat(6, 1fr); padding:1.5em; grid-gap:1em; min-height:50vh;" 
 )
-
-  //document.querySelector("#buttons").setAttribute("style", "  border-radius:10px; background-color:hsl(223, 31%, 20%);margin-top:2em; display:grid; grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(6, 1fr); padding:1.5em; grid-gap:1em; min-height:80vh;");
-
-
-function output(){
-    console.log(this.value);
- document.getElementById("output-txt").innerHTML += this.value;
-}
-
-let num =
-document.querySelectorAll(".num-btn");
-num.forEach(e => {
-    e.addEventListener("click", output)
-})

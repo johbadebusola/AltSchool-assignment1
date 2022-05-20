@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale:1.0;"> 
+
+  
+  <title>Fr Calculator app</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+    body{
+        background-color: hsl(222, 26%, 31%);
+        margin: 1.5em;
+       
+    }
+    
+    .span-2{
+        grid-column: span 1;
+        background-color:  hsl(30, 25%, 89%) ;
+        color:white;
+        
+    }
+
+    .span-3{
+        grid-column: span 1;
+         height:2.5em;
+    }
+
+    
+    
+    #buttons  > button{
+        font-family: 'League Spartan', sans-serif; font-size: 1.5em;
+       border-radius: 10px;
+        background-color: hsl(30, 25%, 89%);
+         box-shadow: 0px 3px 0px  hsl(28, 16%, 65%);
+        border:none ;
+        color: hsl(221, 14%, 31%);
+height:2.5em;
+    }
+    
+  .reset, .del{
+        background-color:  hsl(225, 21%, 49%) !important;
+         box-shadow: 0px 3px 0px hsl(224, 28%, 35%) !important;
+        color:white !important;
+    }
+    
+    
+        .equals{
+            background-color:hsl(6, 63%, 50%) !important; 
+            
+            box-shadow:0px 3px 0px hsl(6, 70%, 34%) !important;
+            color:white !important;
+        }
+    
+    #buttons:hover{
+        background-color: hsl(225, 21%, 49%) ;
+        color: aliceblue;
+       
+        transition:2s ease-in-out;
+    }
+
+#logo2 a{
+color:white;
+text-decoration:none;
+}
+    
+   
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+<div id="banner">
+    <P id="logo"> Calc</P>
+    <p id="logo2"> <a href="index.html">BACK </a></p>
+    
+   
+    
+    </div>
+    
+    <div id="calc-grid">
+        
+        <div id="output">  
+        <p id="output-txt"> </p>
+        </div>
+        
+    <div id="buttons">
+       
+    
+   <button class="num-btn"  value="9"> 9 </button>
+        <button class="num-btn"  value="8"> 8 </button>
+             <button> + </button>
+         <button class="num-btn" value="7"> 7 </button>
+         <button class="num-btn" value="6"> 6 </button>
+  <button> - </button>
+
+        <button class="num-btn" value="5"> 5 </button>
+     
+     <button class="num-btn"  value="4"> 4 </button>
+    <button> / </button>
+   <button class="num-btn" value="3"> 3 </button>
+    <button class="num-btn" value="2"> 2 </button>
+      <button> x </button>
+  <button class="num-btn" value="1"> 1 </button>
+            <button class="num-btn" value="0"> 0 </button>
+  <button class="del"> % </button>
+  
+     <button class="span-2 reset"> C </button>
+    <button> . </button>
+        <button class="span-3 equals"> = </button>
+       
+        </div>
+    
+        <div>
+        
+        
+        </div>
+    
+    </div>
+   
+ <script src="calc.js"></script>
+</body>
+</html>
